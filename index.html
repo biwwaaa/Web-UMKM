@@ -1,0 +1,383 @@
+<!DOCTYPE html>
+<html lang="id">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Salon</title>
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <style>
+        :root {
+            --salon-pink: #ff69b4;
+        }
+
+        body {
+            scroll-behavior: smooth;
+        }
+
+        .btn-pink {
+            background-color: var(--salon-pink);
+            color: white;
+        }
+
+        .btn-pink:hover {
+            background-color: #ff4fa3;
+            color: white;
+        }
+
+        /* HERO FULL SCREEN */
+        #home {
+            min-height: 100vh;
+            padding-top: 90px;
+            /* offset navbar */
+            display: flex;
+            align-items: center;
+        }
+
+        footer a:hover {
+            color: #ff69b4 !important;
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- NAVBAR -->
+    <nav class="navbar navbar-expand-lg fixed-top bg-white shadow-sm">
+        <div class="container">
+            <a class="navbar-brand d-flex align-items-center gap-2" href="#">
+                <img src="img/logo.jpeg" alt="Salon Logo" height="100">
+                <span class="fw-bold">Salon</span>
+            </a>
+
+            <button class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#nav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="nav">
+                <ul class="navbar-nav mx-auto">
+                    <li class="nav-item"><a class="nav-link" href="#home">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#services">Layanan</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#testi">Testimoni</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#contact">Kontak</a></li>
+                </ul>
+
+                <a href="#booking" class="btn btn-pink rounded-pill px-4">
+                    Booking
+                </a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- HERO -->
+    <section id="home">
+        <div class="container">
+            <div class="row align-items-center">
+
+                <!-- TEXT -->
+                <div class="col-md-6">
+                    <span class="badge bg-light text-dark mb-3">
+                        ✨ Salon Profesional & Nyaman
+                    </span>
+
+                    <h1 class="fw-bold display-5 mt-3">
+                        Booking Salon Lebih Mudah & Cepat
+                    </h1>
+
+                    <p class="text-muted mt-3">
+                        Pesan layanan salon favoritmu kapan saja tanpa ribet.
+                        Datang sesuai jadwal, bayar langsung di tempat.
+                    </p>
+
+                    <div class="d-flex gap-3 mt-4">
+                        <a href="#booking" class="btn btn-pink btn-lg rounded-pill px-4">
+                            Booking
+                        </a>
+                        <a href="#services" class="btn btn-outline-secondary btn-lg rounded-pill px-4">
+                            Layanan
+                        </a>
+                    </div>
+                </div>
+
+                <!-- IMAGE -->
+                <div class="col-md-6 text-center">
+                    <img src="img/image.png" width="500" height="500" class="img-fluid rounded-4" alt="Salon">
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- SERVICES -->
+    <section id="services" class="py-5 bg-light">
+        <div class="container">
+
+            <div class="text-center mb-5">
+                <h2 class="fw-bold">Paket Layanan Salon</h2>
+                <p class="text-muted">Pilih paket perawatan terbaik untukmu</p>
+            </div>
+
+            <div class="row g-4">
+
+                <!-- BASIC -->
+                <div class="col-md-4">
+                    <div class="card h-100 shadow-sm border-0 rounded-4">
+                        <div class="card-body p-4">
+
+                            <span class="badge bg-light text-dark rounded-pill mb-3">Basic</span>
+
+                            <h4 class="fw-bold">Perawatan Basic</h4>
+                            <p class="text-muted small">Cocok untuk perawatan ringan</p>
+
+                            <h2 class="fw-bold my-4">Rp 50.000</h2>
+
+                            <ul class="list-unstyled mb-4">
+                                <li>✓ Potong rambut</li>
+                                <li>✓ Cuci rambut</li>
+                                <li>✓ Styling ringan</li>
+                            </ul>
+
+                            <a href="#" class="btn btn-outline-dark w-100 rounded-pill">
+                                Booking Sekarang
+                            </a>
+
+                        </div>
+                    </div>
+                </div>
+
+                <!-- FAVORITE -->
+                <div class="col-md-4">
+                    <div class="card h-100 shadow-lg border-0 rounded-4" style="background:#F9EFF2;">
+                        <div class="card-body p-4">
+
+                            <span class="badge rounded-pill mb-3" style="background:var(--salon-pink);">
+                                Paling Favorit
+                            </span>
+
+                            <h4 class="fw-bold">Perawatan Lengkap</h4>
+                            <p class="text-muted small">Perawatan maksimal</p>
+
+                            <h2 class="fw-bold my-4">Rp 120.000</h2>
+
+                            <ul class="list-unstyled mb-4">
+                                <li>✓ Potong rambut</li>
+                                <li>✓ Creambath</li>
+                                <li>✓ Pijat kepala</li>
+                                <li>✓ Styling premium</li>
+                            </ul>
+
+                            <a href="#" class="btn btn-pink w-100 rounded-pill">
+                                Booking Sekarang
+                            </a>
+
+                        </div>
+                    </div>
+                </div>
+
+                <!-- PREMIUM -->
+                <div class="col-md-4">
+                    <div class="card h-100 shadow-sm border-0 rounded-4">
+                        <div class="card-body p-4">
+
+                            <span class="badge bg-light text-dark rounded-pill mb-3">Premium</span>
+
+                            <h4 class="fw-bold">Perawatan Premium</h4>
+                            <p class="text-muted small">Produk & layanan terbaik</p>
+
+                            <h2 class="fw-bold my-4">Rp 250.000</h2>
+
+                            <ul class="list-unstyled mb-4">
+                                <li>✓ Hair coloring</li>
+                                <li>✓ Creambath</li>
+                                <li>✓ Vitamin rambut</li>
+                                <li>✓ Styling profesional</li>
+                            </ul>
+
+                            <a href="#" class="btn btn-outline-dark w-100 rounded-pill">
+                                Booking Sekarang
+                            </a>
+
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- TESTIMONI -->
+    <section id="testi" class="py-5 bg-light">
+        <div class="container">
+
+            <div class="text-center mb-5">
+                <span class="badge rounded-pill px-3 py-2 mb-2" style="background-color:#ffe4f0; color:#ff69b4;">
+                    💬 Testimoni
+                </span>
+                <h2 class="fw-bold mt-3">Apa Kata Pelanggan Kami</h2>
+                <p class="text-muted">
+                    Kepuasan pelanggan adalah prioritas utama kami
+                </p>
+            </div>
+
+            <div class="row g-4">
+
+                <!-- TESTI 1 -->
+                <div class="col-md-4">
+                    <div class="card h-100 border-0 shadow-sm rounded-4">
+                        <div class="card-body p-4">
+
+                            <!-- RATING -->
+                            <div class="mb-3 text-warning">
+                                ★★★★★
+                            </div>
+
+                            <p class="text-muted fst-italic">
+                                “Pelayanannya ramah, tempatnya nyaman, dan hasil potongannya rapi banget.
+                                Pasti balik lagi!”
+                            </p>
+
+                            <div class="d-flex align-items-center mt-4">
+                                <img src="https://i.pravatar.cc/60?img=32" class="rounded-circle me-3" width="50"
+                                    height="50">
+                                <div>
+                                    <h6 class="mb-0 fw-semibold">Siti Aisyah</h6>
+                                    <small class="text-muted">Pelanggan Tetap</small>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+
+                <!-- TESTI 2 -->
+                <div class="col-md-4">
+                    <div class="card h-100 border-0 shadow-lg rounded-4" style="background-color:#fff0f7;">
+
+                        <div class="card-body p-4">
+
+                            <div class="mb-3 text-warning">
+                                ★★★★★
+                            </div>
+
+                            <p class="text-muted fst-italic">
+                                “Booking online-nya gampang banget, datang tinggal duduk.
+                                Hasil creambath-nya bikin rileks!”
+                            </p>
+
+                            <div class="d-flex align-items-center mt-4">
+                                <img src="https://i.pravatar.cc/60?img=47" class="rounded-circle me-3" width="50"
+                                    height="50">
+                                <div>
+                                    <h6 class="mb-0 fw-semibold">Dewi Lestari</h6>
+                                    <small class="text-muted">Pelanggan</small>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+
+                <!-- TESTI 3 -->
+                <div class="col-md-4">
+                    <div class="card h-100 border-0 shadow-sm rounded-4">
+                        <div class="card-body p-4">
+
+                            <div class="mb-3 text-warning">
+                                ★★★★☆
+                            </div>
+
+                            <p class="text-muted fst-italic">
+                                “Stylist-nya profesional dan komunikatif.
+                                Warna rambutnya sesuai banget sama yang aku mau.”
+                            </p>
+
+                            <div class="d-flex align-items-center mt-4">
+                                <img src="https://i.pravatar.cc/60?img=15" class="rounded-circle me-3" width="50"
+                                    height="50">
+                                <div>
+                                    <h6 class="mb-0 fw-semibold">Rina Putri</h6>
+                                    <small class="text-muted">Pelanggan Baru</small>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+    </section>
+
+
+    <!-- FOOTER -->
+    <footer class="bg-dark text-light pt-5" id="contact">
+        <div class="container">
+            <div class="row gy-4">
+
+                <!-- BRAND -->
+                <div class="col-md-4">
+                    <h4 class="fw-bold mb-3">SalonCantik</h4>
+                    <p class="text-secondary">
+                        Salon kecantikan profesional dengan layanan terbaik untuk rambut dan perawatanmu.
+                        Booking mudah, datang sesuai jadwal.
+                    </p>
+                </div>
+
+                <!-- MENU -->
+                <div class="col-md-2">
+                    <h6 class="fw-semibold mb-3">Menu</h6>
+                    <ul class="list-unstyled">
+                        <li class="mb-2">
+                            <a href="#home" class="text-secondary text-decoration-none">Home</a>
+                        </li>
+                        <li class="mb-2">
+                            <a href="#services" class="text-secondary text-decoration-none">Layanan</a>
+                        </li>
+                        <li class="mb-2">
+                            <a href="#testi" class="text-secondary text-decoration-none">Testimoni</a>
+                        </li>
+                        <li class="mb-2">
+                            <a href="#contact" class="text-secondary text-decoration-none">Kontak</a>
+                        </li>
+                    </ul>
+                </div>
+
+                <!-- JAM OPERASIONAL -->
+                <div class="col-md-3">
+                    <h6 class="fw-semibold mb-3">Jam Operasional</h6>
+                    <ul class="list-unstyled text-secondary">
+                        <li>Senin – Jumat : 09.00 – 20.00</li>
+                        <li>Sabtu : 09.00 – 22.00</li>
+                        <li>Minggu : 10.00 – 18.00</li>
+                    </ul>
+                </div>
+
+                <!-- KONTAK -->
+                <div class="col-md-3">
+                    <h6 class="fw-semibold mb-3">Kontak Kami</h6>
+                    <ul class="list-unstyled text-secondary">
+                        <li class="mb-2">Jl. Mawar No. 12, mars</li>
+                        <li class="mb-2">0852-7164-7396</li>
+                        <li class="mb-3">salonpink@gmail.com</li>
+                    </ul>
+                </div>
+
+            </div>
+
+            <hr class="border-secondary my-4">
+
+            <!-- COPYRIGHT -->
+            <div class="text-center pb-3 text-secondary small">
+                © 2026 Salon. All rights reserved.
+            </div>
+        </div>
+    </footer>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>
